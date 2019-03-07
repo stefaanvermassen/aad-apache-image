@@ -1,6 +1,6 @@
 FROM httpd:2.4
 RUN apt-get update && apt-get install -y apt-file && apt-file update
-RUN apt-get install -y libapache2-mod-auth-mellon unzip
+RUN apt-get install -y libapache2-mod-auth-mellon unzip curl
 COPY rootfs /
 ENV ENDPOINT_URL="test.com/mellon" \
     ENTITY_ID="test.com" \
