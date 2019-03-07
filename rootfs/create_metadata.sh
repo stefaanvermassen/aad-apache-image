@@ -118,3 +118,4 @@ chmod go+r "$OUTFILE.cert"
 curl https://login.microsoftonline.com/${AZURE_TENANT_NAME}/FederationMetadata/2007-06/FederationMetadata.xml -o /usr/local/apache2/azure.xml
 chmod go+r /usr/local/apache2/azure.xml
 chmod go+r /usr/local/apache2/wiki.*
+httpd-foreground
