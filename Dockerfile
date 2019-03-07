@@ -5,5 +5,5 @@ COPY rootfs /
 ENV ENDPOINT_URL="test.com/mellon" \
     ENTITY_ID="test.com" \
     AZURE_TENANT_NAME="test.aad.com"
-    
+RUN chmod +x /create_metadata.sh
 ENTRYPOINT [ "/create_metadata.sh" ]
