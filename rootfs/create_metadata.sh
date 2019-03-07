@@ -112,9 +112,9 @@ EOF
 umask 0777
 chmod go+r "$OUTFILE.xml"
 chmod go+r "$OUTFILE.cert"
-cp "$OUTFILE.xml" /usr/local/apache2/
-cp "$OUTFILE.cert" /usr/local/apache2/
-cp "$OUTFILE.key" /usr/local/apache2/
+#cp "$OUTFILE.xml" /usr/local/apache2/
+#cp "$OUTFILE.cert" /usr/local/apache2/
+#cp "$OUTFILE.key" /usr/local/apache2/
 curl https://login.microsoftonline.com/${AZURE_TENANT_NAME}/FederationMetadata/2007-06/FederationMetadata.xml -o /usr/local/apache2/azure.xml
 chmod go+r /usr/local/apache2/azure.xml
 chmod go+r /usr/local/apache2/wiki.*
